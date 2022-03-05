@@ -4,14 +4,14 @@ import java.util.function.Consumer;
 
 public class Main {
     public static void main(String[] args) {
-        LazySingleton lazySingleton = new LazySingleton();
+        LazySingleton lazySingleton = LazySingleton.getInstance();
         lazySingleton.printIns();
-        lazySingleton = new LazySingleton();
+        lazySingleton = LazySingleton.getInstance();
         lazySingleton.printIns();
 
-        DemandSingleton demandSingleton = new DemandSingleton();
+        DemandSingleton demandSingleton = DemandSingleton.getInstance();
         demandSingleton.printIns();
-        demandSingleton = new DemandSingleton();
+        demandSingleton = DemandSingleton.getInstance();
         demandSingleton.printIns();
 
         System.out.println(EnumSingleton.INSTANCE);

@@ -1,8 +1,9 @@
 package com.Vitaliy.task5;
 
 public class LazySingleton {
-    private LazySingleton instance;
-    public synchronized LazySingleton getInstance() {
+    private static LazySingleton instance;
+
+    public static synchronized LazySingleton getInstance() {
         if(instance == null) {
             instance = new LazySingleton();
             return instance;
