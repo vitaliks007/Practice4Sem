@@ -30,11 +30,12 @@ public class Main {
         });
         one.start();
         two.start();
-        Thread.sleep(1000);
+        Thread.sleep(100);
+
         one.interrupt();
         two.interrupt();
 
-        System.out.println(list);
+        System.out.println(list.size());
     }
 
     static void setTest() throws InterruptedException {
@@ -50,11 +51,11 @@ public class Main {
         });
         one.start();
         two.start();
-        Thread.sleep(1000);
+        Thread.sleep(100);
         one.interrupt();
         two.interrupt();
 
-        System.out.println(set);
+        System.out.println(set.size());
     }
 
     public static void main(String[] args) throws InterruptedException {
