@@ -1,0 +1,2 @@
+ru/vitaliy/Main.java
+ ru.vitaliy.Main
